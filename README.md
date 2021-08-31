@@ -6,7 +6,7 @@ A proposta desse guia de estilos é documentar uma série de preferencias pessoa
 
 Esse guia é separado em regras e cada regra tem a seguinte estrutura:  
 
-- O que: qual a regra e uma breve descrição;
-- Como: um exemplo de código de como implementar; e
-- Porquê: uma breve explicação de porque usar essa regra.
+- **O quê**: qual a regra e uma breve descrição;
+- **Como**: um exemplo de código de como implementar; e
+- **Porquê**: uma breve explicação de porque usar essa regra.
 
