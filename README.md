@@ -27,7 +27,14 @@ Esse guia é separado em 3 partes:
         }
       }
       ```
-2. **Métodos com mais de 5 instruções**
+2. **Métodos com mais de 4 instruções**
+    - Não é exato, pois depende muito da instrução, mas se for muito mais que isso, é bem provável que o método está fazendo coisas demais;
+    - Podemos também avaliar se a quantidade de linhas é maios que 6 ou 7.
 3. **Número dos parâmetros em métodos**
+    - O ideal é nenhum parametro;
+    - 1 parâmetro é tranquilo;
+    - 2 parametros é aceitável, mas tente dimínuir;
+    - 3 parâmetros, precisa pensar bem antes de criar esse método, busque diminuir, se possível crie um objeto que inclua 2 ou mais parâmetros;
+    - Mais de 3 parâmetros em raríssimos casos.
 4. **Número de instancias privadas na classe**
 5. **Nível de abstração em método**
