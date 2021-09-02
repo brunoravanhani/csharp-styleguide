@@ -6,13 +6,17 @@ A proposta desse guia é documentar uma série de preferencias pessoais e aprend
 
 Esse guia é separado em 3 partes:
 
-- Verificações rápidas em uma classe - são 5 passos para verificar, dentro de uma classe, se a própria classe ou algum método está fazendo coisas demais e precisa e uma extração;
+- Verificações rápidas em uma classe - são 6 passos para verificar, dentro de uma classe, se a própria classe ou algum método está fazendo coisas demais e precisa e uma extração;
 - As regras, que são 10 direcionamentos sobre o que fazer e não fazer, também no contexto de uma classe; e
 - As heurísticas, dicas e code smells que são coisas que podemos melhorar no código para deixar o código melhor para o coleginha programador.
 
 ## Verificações rápidas em uma classe
 
-1. **Indentação**
+1. **Tenha testes**
+    - A verificação mais importante. Tem testes? Verifique se estão passando. Não tem testes? Faça logo testes.
+    - Testes garantem que, ao pegar uma classe e refatorar qualquer coisa ali, o comportamento continua o mesmo.
+    - É uma barreira que te impede de inserir bug em produção.
+2. **Indentação**
     - Verificar se existe algum comando, chave ou qualquer instrução fora da indentação
     - Verificar se há mais de 2 níveis de indentação em um método:
       ```csharp
@@ -27,14 +31,14 @@ Esse guia é separado em 3 partes:
         }
       }
       ```
-2. **Métodos com mais de 4 instruções**
+3. **Métodos com mais de 4 instruções**
     - Não é exato, pois depende muito da instrução, mas se for muito mais que isso, é bem provável que o método está fazendo coisas demais;
     - Podemos também avaliar se a quantidade de linhas é maios que 6 ou 7.
-3. **Número dos parâmetros em métodos**
+4. **Número dos parâmetros em métodos**
     - O ideal é nenhum parametro;
     - 1 parâmetro é tranquilo;
     - 2 parametros é aceitável, mas tente dimínuir;
     - 3 parâmetros, precisa pensar bem antes de criar esse método, busque diminuir, se possível crie um objeto que inclua 2 ou mais parâmetros;
     - Mais de 3 parâmetros em raríssimos casos.
-4. **Número de instancias privadas na classe**
-5. **Nível de abstração em método**
+5. **Número de instancias privadas na classe**
+6. **Nível de abstração em método**
