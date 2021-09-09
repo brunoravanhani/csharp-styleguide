@@ -41,4 +41,9 @@ Esse guia é separado em 3 partes:
     - 3 parâmetros, precisa pensar bem antes de criar esse método, busque diminuir, se possível crie um objeto que inclua 2 ou mais parâmetros;
     - Mais de 3 parâmetros em raríssimos casos.
 5. **Número de instancias privadas na classe**
+    - Normalmente quando há muitas variáveis de instância em um classe, ela está fazendo coisas de mais;
+    - Há um regra que diz que uma classe deve ser descrita em até 25 linhas e sem usar as palavras "se", "e", "ou" ou "mas".
 6. **Nível de abstração em método**
+    - Um método deve ter apenas 1 nível de abstração;
+    - Se houver mais alguma linha com outro nível, essa linha deve ser extraída;
+    - Um arquivo (quase sempre) deve ter apenas uma linguagem, seja C#, javacript, HTML, Português, Inglês, etc.
