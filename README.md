@@ -18,7 +18,7 @@ Esse guia é separado em 3 partes:
     - É uma barreira que te impede de inserir bug em produção.
 2. **Indentação**
     - Verificar se existe algum comando, chave ou qualquer instrução fora da indentação
-    - Verificar se há mais de 2 níveis de indentação em um método:
+    - Verificar se há mais de 2 níveis de indentação em um método (isso é um sinal de que o método pode estar fazendo mais de uma coisa):
       ```csharp
       public void DoSomething(bool parameter)
       {
