@@ -10,10 +10,11 @@ Esse guia é separado em 3 partes:
 - As regras, que são 10 direcionamentos sobre o que fazer e não fazer, também no contexto de uma classe; e
 - As heurísticas, dicas e code smells que são coisas que podemos melhorar no código para deixar o código melhor para o coleginha programador.
 
-## Verificações rápidas em uma classe
+## Verificações rápidas no contexto de um método
+As duas principais coisas para avaliar um método é: está coberto de testes, ou seja, está fazendo corretamente aquilo que se propõe a fazer; e está fazendo apenas uma coisa, segundo o princípio [SRP](https://en.wikipedia.org/wiki/Single-responsibility_principle).
 
-1. **Tenha testes**
-    - A verificação mais importante. Tem testes? Verifique se estão passando. Não tem testes? Faça logo testes.
+1. **Ter testes**
+    - 100% de Code coverage, se for possível.
     - Testes garantem que, ao pegar uma classe e refatorar qualquer coisa ali, o comportamento continua o mesmo.
     - É uma barreira que te impede de inserir bug em produção.
 2. **Indentação**
@@ -47,3 +48,9 @@ Esse guia é separado em 3 partes:
     - Um método deve ter apenas 1 nível de abstração;
     - Se houver mais alguma linha com outro nível, essa linha deve ser extraída;
     - Um arquivo (quase sempre) deve ter apenas uma linguagem, seja C#, javacript, HTML, Português, Inglês, etc.
+
+## Verificações rápidas em uma classe
+
+5. **Número de instancias privadas na classe**
+    - Normalmente quando há muitas variáveis de instância em um classe, ela está fazendo coisas de mais;
+    - Há um regra que diz que uma classe deve ser descrita em até 25 linhas e sem usar as palavras "se", "e", "ou" ou "mas".
