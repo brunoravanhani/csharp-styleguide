@@ -53,3 +53,4 @@ As duas principais coisas para avaliar um método é: está coberto de testes, o
 - Cada instrução em uma linha
 - Uso correto de logs
 - Comentários
+- Valores "mágicos" como constantes
