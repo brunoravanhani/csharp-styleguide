@@ -9,19 +9,18 @@ As duas principais coisas para avaliar um método é: está coberto de testes, o
 
 1. **Ter testes**
     - 100% de Code coverage, se for possível.
-    - Testes garantem que, ao pegar uma classe e refatorar qualquer coisa ali, o comportamento continua o mesmo.
-    - É uma barreira que te impede de inserir bug em produção.
 2. **Indentação**
     - Verificar se existe algum comando, chave ou qualquer instrução fora da indentação
     - Verificar se há mais de 2 níveis de indentação em um método (isso é um sinal de que o método pode estar fazendo mais de uma coisa):
       ```csharp
       public void DoSomething(bool parameter)
       {
-        if (parameter) // 1º Nível
+        for (var p in parameters) // 1º Nível
         {
-          if (!parameter) // 2º Nível
+          if (!p) // 2º Nível
           {
-            DoOtherThing(); // 3º Nível -> extrair método
+            // p.Something() -> 3º Nível -> extrair método 
+            DoOtherThing(); // 3º Nível -> método extraído
           }
         }
       }
